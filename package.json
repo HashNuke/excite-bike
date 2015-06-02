@@ -9,7 +9,7 @@
   },
   "author": "",
   "private": true,
-  "devDependencies": {
+  "dependencies": {
     "babel": "^5.4.7",
     "babel-brunch": "^5.1.2",
     "bower": "^1.4.1",
