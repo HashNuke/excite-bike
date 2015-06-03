@@ -8,12 +8,12 @@ var App = {
 
 
     let startGame = function() {
-      Game.init()
-    }
+      Game.init();
+    };
 
-    document.getElementById("start-game").addEventListener("click", startGame)
+    document.getElementById("start-game").addEventListener("click", startGame);
 
-    let gameContainer = d3.select(".game-container")
+    let gameContainer = d3.select(".game-container");
     gameContainer.style({"background-color": "black", "height": "200px"});
   }
 };
