@@ -1,18 +1,20 @@
 "use strict";
 
 class Player {
-  constructor() {
+  constructor(bindControls=false) {
     console.log("Init player");
 
-    d3.select("body").on("keydown", () => {
-      let action = this.getActionForKey(d3.event.which);
-      console.log(action);
-    });
+    if(bindControls) {
+      d3.select("body").on("keydown", () => {
+        let action = this.getActionForKey(d3.event.which);
+        console.log(action);
+      });
 
-    d3.select("body").on("keyup", ()=>{
-      let action = this.getActionForKey(d3.event.which);
-      console.log(action);
-    });
+      d3.select("body").on("keyup", ()=>{
+        let action = this.getActionForKey(d3.event.which);
+        console.log(action);
+      });
+    }
   }
 
 
@@ -25,9 +27,11 @@ class Player {
 
     // left arrow or a
     if(key == 37 || key == 65) return "left";
-    
+
     // right arrow or d
     if(key == 39 || key == 68) return "right";
+
+    return null;
   }
 }
 

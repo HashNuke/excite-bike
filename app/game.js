@@ -1,14 +1,18 @@
 "use strict";
 
-var Game = {
-  init: function() {
-    console.log("started game");
-  },
+var Player = require("player");
 
-  drawTrack: function() {
-  },
+class Game {
+  constructor() {
+    console.log("Init game");
+    console.log(this);
+    this.players = [new Player(true)];
+  }
 
-  drawBackground: function() {
+  drawTrack() {
+  }
+
+  drawBackground() {
   }
 }
 

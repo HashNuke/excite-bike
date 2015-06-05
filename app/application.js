@@ -3,12 +3,16 @@
 var Game = require("game"),
     GameArea = require("game-area");
 
-var App = {
-  init: function init() {
+class App {
+  constructor() {
     console.log('App initialized.');
-    GameArea.init();
-    d3.select("#start-game").on("click", Game.init);
+    new GameArea();
+
+    // TODO remove this later
+    new Game();
+
+    d3.select("#start-game").on("click", () => new Game());
   }
-};
+}
 
 module.exports = App;

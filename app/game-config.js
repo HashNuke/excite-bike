@@ -3,9 +3,11 @@
 var GameConfig = {
   gameContainerSelector: ".game-container",
 
-  getHeight: function() { return 480; },
+  getHeight: function() { return 640; },
 
-  getWidth: function() { return 320; }
+  getWidth: function() { return 480; },
+
+  getRatio: function() { return 1; }
 };
 
 module.exports = GameConfig;
