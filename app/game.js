@@ -3,6 +3,12 @@
 var Game = {
   init: function() {
     console.log("started game");
+  },
+
+  drawTrack: function() {
+  },
+
+  drawBackground: function() {
   }
 }
 
