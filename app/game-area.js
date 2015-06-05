@@ -8,9 +8,9 @@ class GameArea {
   constructor() {
     let gameContainer = d3.select("body")
           .insert("svg", ":first-child")
-          .attr("class", GameConfig.gameContainerSelector)
-          .attr("width", GameConfig.getHeight())
-          .attr("height", GameConfig.getWidth());
+          .attr("class", GameConfig.gameContainerClass)
+          .attr("width", GameConfig.getWidth())
+          .attr("height", GameConfig.getHeight());
     gameContainer.style("background-color", "black");
   }
 

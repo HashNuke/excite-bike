@@ -1,11 +1,12 @@
 "use strict";
 
 var GameConfig = {
+  gameContainerClass: "game-container",
   gameContainerSelector: ".game-container",
 
-  getHeight: function() { return 640; },
+  getWidth: function() { return 640; },
 
-  getWidth: function() { return 480; },
+  getHeight: function() { return 480; },
 
   getRatio: function() { return 1; }
 };
